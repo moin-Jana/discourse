@@ -4,8 +4,12 @@ import discourseComputed from "discourse-common/utils/decorators";
 
 @tagName("")
 export default class UserSummaryCategorySearch extends Component {
-  @discourseComputed("user", "category")
+  @discourseComputed("user", "category", "searchOnlyFirstPosts")
   searchParams() {
-    return `@${this.get("user.username")} #${this.get("category.slug")}`;
+    let query = `@${this.get("user.username")} #${this.get("category.slug")}`;
+	if (this.searchOnlyFirstPosts) {
+      query += " in:first";
+    }
+	return query;
   }
 }
