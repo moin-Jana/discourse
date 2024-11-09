@@ -433,7 +433,7 @@ en:
     user_exists: "Sorry, that user has already been invited. You may only invite a user to a topic once."
     muted_topic: "Sorry, that user muted this topic."
     receiver_does_not_allow_pm: "Sorry, that user does not allow you to send them personal messages."
-    sender_does_not_allow_pm: "Sorry, you do not allow that user to send you ppersonal messages."
+    sender_does_not_allow_pm: "Sorry, you do not allow that user to send you personal messages."
     user_cannot_see_topic: "%{username} cannot see the topic."
 
   backup:
@@ -1495,12 +1495,12 @@ en:
       title: "Notify Moderators"
       xaxis: "Day"
       yaxis: "Number of messages"
-      description: "Number of times moderators have been privately? notified by a flag."
+      description: "Number of times moderators have been notified by a flag which creates a personal message."
     notify_user_private_messages:
       title: "Notify User"
       xaxis: "Day"
       yaxis: "Number of messages"
-      description: "Number of times users have been privately? notified by a flag."
+      description: "Number of times users have been send a personal message using the flag dialog."
     top_referrers:
       title: "Top Referrers"
       xaxis: "User"
