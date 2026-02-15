@@ -978,7 +978,9 @@ en:
         semantic_search: "Topics (Semantic)"
         semantic_search_loading: "Searching for more results using AI"
         semantic_search_results:
-          toggle: "Showing %{count} results found using AI"
+          toggle:
+            one: "Showing %{count} result found using AI"
+            other: "Showing %{count} results found using AI"
           toggle_hidden: "Hiding %{count} results found using AI"
           none: "Sorry, our AI search found no matching topics"
           new: "Press 'search' to begin looking for new results with AI"
