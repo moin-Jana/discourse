@@ -599,7 +599,7 @@ RSpec.describe DraftsController do
 
       expect(response.status).to eq(400)
       expect(response.parsed_body["errors"].first).to include(
-        I18n.t("draft.bulk_destroy_limit", limit: DraftsController::BULK_DESTROY_LIMIT),
+        I18n.t("draft.bulk_destroy_limit", count: DraftsController::BULK_DESTROY_LIMIT),
       )
     end
 
