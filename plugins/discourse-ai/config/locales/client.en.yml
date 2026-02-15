@@ -981,7 +981,9 @@ en:
           toggle:
             one: "Showing %{count} result found using AI"
             other: "Showing %{count} results found using AI"
-          toggle_hidden: "Hiding %{count} results found using AI"
+          toggle_hidden:
+            one: "Hiding %{count} result found using AI"
+            other: "Hiding %{count} results found using AI"
           none: "Sorry, our AI search found no matching topics"
           new: "Press 'search' to begin looking for new results with AI"
           unavailable: "AI results unavailable"
