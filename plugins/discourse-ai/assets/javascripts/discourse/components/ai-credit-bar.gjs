@@ -35,7 +35,7 @@ export default class AiCreditBar extends Component {
     }
     return i18n("discourse_ai.llms.credit_allocation.credits_remaining", {
       remaining: number(this.args.allocation.credits_remaining),
-      total: number(this.args.allocation.daily_credits),
+      count: number(this.args.allocation.daily_credits),
       percentage: this.args.allocation.percentage_remaining,
     });
   }
@@ -44,7 +44,7 @@ export default class AiCreditBar extends Component {
     if (this.args.compact) {
       return i18n("discourse_ai.llms.credit_allocation.credits_remaining", {
         remaining: number(this.args.allocation.credits_remaining),
-        total: number(this.args.allocation.daily_credits),
+        count: number(this.args.allocation.daily_credits),
         percentage: this.args.allocation.percentage_remaining,
       });
     }
