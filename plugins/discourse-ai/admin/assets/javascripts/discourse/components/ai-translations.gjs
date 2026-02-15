@@ -346,7 +346,7 @@ export default class AiTranslations extends Component {
         tooltip: [
           i18n("discourse_ai.translations.progress_chart.tooltip_translated", {
             done,
-            total,
+            count: total,
             language: languageNameForTooltip,
           }),
         ],

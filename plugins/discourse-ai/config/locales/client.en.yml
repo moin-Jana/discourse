@@ -402,7 +402,9 @@ en:
         progress_chart:
           title: "Translation Progress"
           data_label: "%{percentage}%"
-          tooltip_translated: "%{done} out of %{total} non-%{language} posts translated"
+          tooltip_translated:
+            one: "%{done} out of %{count} non-%{language} post translated"
+            other: "%{done} out of %{count} non-%{language} posts translated"
           bar_done:
             one: "%{count} post"
             other: "%{count} posts"
