@@ -168,7 +168,7 @@ class DraftsController < ApplicationController
 
     if draft_keys.length > BULK_DESTROY_LIMIT
       raise Discourse::InvalidParameters.new(
-              I18n.t("draft.bulk_destroy_limit", limit: BULK_DESTROY_LIMIT),
+              I18n.t("draft.bulk_destroy_limit", count: BULK_DESTROY_LIMIT),
             )
     end
 
