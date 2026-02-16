@@ -15,8 +15,8 @@ class ProblemCheck::AiLlmStatus < ProblemCheck
       target: model.id,
       model_name: model.display_name,
       failed_calls: failed_calls,
-      total_calls: total_calls,
-      count: lookback_hours,
+      count: total_calls,
+      duration_text: I18n.t("dashboard.problem.ai_llm_status_hours", count: lookback_hours),
     }
   end
 
